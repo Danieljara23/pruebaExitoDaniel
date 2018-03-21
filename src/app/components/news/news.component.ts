@@ -14,7 +14,7 @@ export class NewsComponent implements OnInit {
 
     this._news.getNoticias()
           .subscribe( resNewsData => {
-            this.noticias = resNewsData
+            this.noticias = resNewsData;
             console.log(resNewsData);
           });
   }
