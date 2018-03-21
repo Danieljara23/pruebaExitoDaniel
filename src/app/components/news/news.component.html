@@ -1,0 +1,23 @@
+<div class="container main-container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Our latest Articles</h1>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" *ngFor="let articulo of noticias.articles">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ articulo.title }}</h4>
+          <span>by</span><h6 class="card-subtitle mb-2 text-muted">{{ articulo.author }}</h6>
+          <p class="card-text">{{ articulo.description}}</p>
+          <a [href]="articulo.url" class="btn btn-info" target="_blank">Go to Article</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

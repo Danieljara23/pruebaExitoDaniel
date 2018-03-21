@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.card{
+  margin-top: 20px;
+}
+.main-container{
+  margin-top: 30px;
+}
+.card-body span{
+  display: inline;
+  font-size: 10px;margin-right: 5px;
+}
+.card-body .card-subtitle{
+  display: inline-block;
+}
