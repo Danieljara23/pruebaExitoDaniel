@@ -12,3 +12,6 @@
 .card-body .card-subtitle{
   display: inline-block;
 }
+.badge.badge-secondary{
+  display: inline-block;
+}

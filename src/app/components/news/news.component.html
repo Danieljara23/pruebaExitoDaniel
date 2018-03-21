@@ -8,11 +8,13 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6" *ngFor="let articulo of noticias.articles">
+    <div class="col-md-4" *ngFor="let articulo of noticias.articles">
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">{{ articulo.title }}</h4>
+          <img [src]="articulo.urlToImage"  onError="this.src='assets/img/attachment-no-image-available.png'" class="card-img-top" >
           <span>by</span><h6 class="card-subtitle mb-2 text-muted">{{ articulo.author }}</h6>
+          <span >|| {{articulo.publishedAt | date:'mediumDate'}}</span>
           <p class="card-text">{{ articulo.description}}</p>
           <a [href]="articulo.url" class="btn btn-info" target="_blank">Go to Article</a>
         </div>
