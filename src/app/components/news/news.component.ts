@@ -8,7 +8,7 @@ import { NewsService } from "../../services/news.service";
 })
 export class NewsComponent implements OnInit {
 
-  noticias = [];
+  noticias  = [];
 
   constructor(public _news: NewsService) {
 

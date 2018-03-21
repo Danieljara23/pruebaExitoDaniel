@@ -15,6 +15,6 @@ export class NewsService {
   getNoticias(){
 
     return this._http.get(this._url)
-        .map((response: Response) => response);
+        .map((response: any ) => response);
   }
 }
